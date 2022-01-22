@@ -1,9 +1,9 @@
 import express from 'express'
+import { getWatches, createWatch } from '../controllers/watches.js';
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.send('this works')
-})
+router.get('/', getWatches);
+router.post('/', createWatch);
 
 export default router;
