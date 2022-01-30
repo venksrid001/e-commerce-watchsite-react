@@ -1,10 +1,17 @@
 import React from 'react'
-
+import { CardHeader, Card, IconButton } from '@material-ui/core';
+import { DeleteOutlined } from '@material-ui/icons'
 const WatchItem = () => {
     return (
-        <div>
-            Watch-item
-        </div>
+        <Card>
+            <CardHeader>
+                action={
+                    <IconButton>
+                        <DeleteOutlined />
+                    </IconButton>
+                }
+            </CardHeader>
+        </Card>
 
     )
 }
